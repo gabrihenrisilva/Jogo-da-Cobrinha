@@ -1,5 +1,5 @@
 // Criar elemento que irá rodar o jogo
-let canvas = document.getElementById("snake");
+let canvas = document.getElementById("gamesnake");
 let context = canvas.getContext("2d");
 let box = 32;
 
@@ -34,6 +34,12 @@ function criarCobrinha (){
         context.fillStyle = "green";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
+}
+
+//Função para desenhar a comida
+function drawFood (){
+    context.fillStyle = "red";
+    context.fillRect(food.x, food.y, box, box);
 }
 
 //Quando acontece um evento, detecta e chama a opção update
