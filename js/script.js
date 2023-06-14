@@ -103,3 +103,10 @@ function iniciarJogo(){
 }
 
 let jogo = setInterval(iniciarJogo, 100);
+
+if (pontos != snake.length-1){
+    pontos++;
+    document.getElementById('pontuacao').innerText = pontos;
+}    
+
+let pontos = 0;
