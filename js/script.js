@@ -31,14 +31,14 @@ function criarBG(){
 //Função para criar a Cobrinha
 function criarCobrinha(){
     for(i = 0; i < snake.length; i++){
-        context.fillStyle = "blue";
+        context.fillStyle = "#0d0d3f";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 //Função para desenhar a comida
 function drawFood(){
-    context.fillStyle = "red";
+    context.fillStyle = "rgb(49, 120, 126)";
     context.fillRect(food.x, food.y, box, box);
 }
 
